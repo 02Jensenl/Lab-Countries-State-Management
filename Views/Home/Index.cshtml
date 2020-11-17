@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model List<Country>
+
+<form action="Home/CountryDetails" method="post">
+    <label for="country">Choose a country:</label>
+    <select id="country" name="country" >
+        <option value="0">Germany</option>
+        <option value="1">Iceland</option>
+        <option value="2">Greece</option>
+        <option value="3">Poland</option>
+        <option value="4">Madagascar</option>
+    </select>
+
+    <input type="submit" value="Go" />
+</form>

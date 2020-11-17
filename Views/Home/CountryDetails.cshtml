@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "CountryDetails";
+}
+
+@*@{
+        Country country = (Country)TempData.Peek("SelectedCountry");
+    }*@
+
+<h1>Country Details</h1>
+
+
+<p>NAME: @TempData.Peek("Name") </p>
+<p>OFFICIAL LANGUAGE(S): @TempData.Peek("Lang") </p>
+<p>HELLO WORLD!: @TempData.Peek("Hello") </p>
+<p>NATIONAL COLORS: @TempData.Peek("Colors") </p>
+
+
+
+@*<p>NAME: @country.Name</p>
+    <p>OFFICIAL LANGUAGES: @country.Languages</p>
+    <p>HELLO WORLD!: @country.Hello</p>
+    <p>National Colors: @country.Colors</p>*@
+
+<a class="btn btn-primary" asp-action="CountryDescription">Click for the country description</a>
+@* Have a link to a Description Page to display the description of the Country *@
